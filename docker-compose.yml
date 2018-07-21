@@ -1,0 +1,12 @@
+version: "3"
+services:
+  cuwo:
+    image: marcermarc/cuwo:latest
+    volumes:
+      - ./config:/opt/cuwo/config
+      - ./save:/opt/cuwo/save
+      - ./data:/opt/cuwo/data
+    ports:
+      - 12345:12345/tcp
+    stdin_open: true
+    tty: true
