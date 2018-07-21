@@ -6,7 +6,7 @@ https://github.com/matpow2/cuwo
 
 # Installation
 Dockerimage to build yourself from the Dockerfile or to get from the Dockerhub:
-https://hub.docker.com/r/marcermarc/dockercuwo/
+https://hub.docker.com/r/marcermarc/cuwo/
 Feel free to use the docker-compose file in this reposetory.
 
 The image contains 3 volumes:
@@ -17,4 +17,4 @@ The image contains 3 volumes:
   * data2.db
 * save: Cuwo saves in this folder the list of bans.
 
-Cube-World uses the port 12345. In the original Client it is nit customizable, so make sure to expose this port to 12345
+Cube-World uses the port 12345. In the original Client it is not customizable, so make sure to expose this port to 12345
