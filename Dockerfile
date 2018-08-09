@@ -38,7 +38,7 @@ WORKDIR /opt/cuwo
 RUN apk add --update --no-cache gcc \
  && apk add --update --no-cache --virtual=.build-dependencies musl-dev g++ make \
  && pip install -r requirements.txt \
- && apk del .build-dependencies
+ && apk del .build-dependencies \
  && adduser -D cuwo -h /opt \
  && chown -R cuwo /opt \
  && chmod -R 777 /opt
