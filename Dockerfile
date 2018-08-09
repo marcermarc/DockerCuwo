@@ -10,7 +10,7 @@ WORKDIR /tmp
 # ---------------------------------------
 RUN apk add --update --no-cache git gcc musl-dev g++ make \
  && git clone https://github.com/matpow2/cuwo.git . \
- && pip install -r requirements.txt
+ && pip install -r requirements.txt \
  && python setup.py build_ext --inplace
 
 #######
